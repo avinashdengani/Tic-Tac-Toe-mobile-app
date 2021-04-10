@@ -8,31 +8,38 @@
     android:padding="10dp">
 
     <LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:text="How to Play?"
-        android:background="@color/white"
-        android:textColor="@color/grey"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:gravity="center"/>
-    <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnCloseDialogBox"
-        android:layout_weight="1"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="❌"
-        android:backgroundTint="@color/white"
-        android:textSize="20sp"
-        android:padding="10dp"
-        android:gravity="end"
-        android:radius="0dp"
-        app:cornerRadius="0dp">
-    </com.google.android.material.button.MaterialButton>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="How to Play?"
+            android:background="@color/white"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCloseDialogBox"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="❌"
+            android:foreground="?attr/selectableItemBackground"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="end"
+            android:radius="0dp"
+            app:cornerRadius="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+        </com.google.android.material.button.MaterialButton>
     </LinearLayout>
     <TextView
         android:layout_width="match_parent"
@@ -41,7 +48,7 @@
         android:padding="10dp"
         android:textColor="@color/white"
         android:text="👉🏻 The game is played on a grid that's 3 squares by 3 squares.\n👉🏻One of the player is  'X' and other is 'O'.\n👉🏻The first player to get 3 of his/her marks in a row (up, down, across, or diagonally) is the winner.\n👉🏻When all 9 squares are full, the game is over."
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -60,6 +67,7 @@
             android:textColor="@color/grey"
             android:foreground="?attr/selectableItemBackground"
             android:padding="10dp"
-            android:text="Okay!!"/>
+            android:text="Okay!!"
+            android:layout_margin="10dp"/>
     </LinearLayout>
 </LinearLayout>

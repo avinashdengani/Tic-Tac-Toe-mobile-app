@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:gravity="center"
+    tools:context=".MainGrid"
+    android:theme="@style/Theme.TicTacToe.NoActionBarThemeForMainGrid">
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player 1's Turn"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textColor="@color/white"
+        android:layout_marginBottom="30dp"
+        >
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <!--ROW 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="3dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn0"
+                android:background="@color/grey"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackground"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:onClick="onBtn0"
+                android:paddingTop="15dp"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:background="@color/grey"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick="onBtn1"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text=""
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:layout_marginLeft="3dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:textAlignment="center"
+                android:onClick="onBtn2"
+                android:paddingTop="15dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+
+        <!--ROW 2-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/grey"
+                android:layout_weight="1"
+                android:text=""
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:onClick= "onBtn3"
+                android:paddingTop="15dp"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/grey"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:foreground="?attr/selectableItemBackground"
+                android:onClick= "onBtn4"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:background="@color/grey"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:textAlignment="center"
+                android:onClick= "onBtn5"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+
+        <!--ROW 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginTop="3dp">
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text=""
+                android:foreground="?attr/selectableItemBackground"
+                android:background="@color/grey"
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:textAlignment="center"
+                android:onClick= "onBtn6"
+                android:paddingTop="15dp"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:background="@color/grey"
+                android:textAlignment="center"
+                android:onClick= "onBtn7"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="3dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_marginRight="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:text=""
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/white"
+                android:textSize="80dp"
+                android:background="@color/grey"
+                android:textAlignment="center"
+                android:onClick= "onBtn8"
+                android:paddingTop="15dp"
+                android:layout_marginLeft="3dp">
+            </com.google.android.material.textview.MaterialTextView>
+
+        </LinearLayout>
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnStartGameInGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:layout_margin="30dp"
+        android:layout_marginTop="50dp"
+        android:text="Start Game"
+        android:textColor="@color/grey"
+        android:foreground="?attr/selectableItemBackground"
+        android:textSize="20dp"
+        app:cornerRadius="8dp"
+        android:padding="10dp"
+        android:onClick="onStartGameInGrid"/>
+</LinearLayout>

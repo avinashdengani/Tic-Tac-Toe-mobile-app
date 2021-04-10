@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TicTacToe.NoActionBarTheme">
-        <activity android:name=".MainActivity"
+
+        <activity android:name=".MainGrid"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.TicTacToe.NoActionBarThemeForMainGrid"></activity>
+
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.TicTacToe.NoActionBarTheme">
             <intent-filter>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/grey"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Start Game as?"
+            android:background="@color/white"
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"/>
+        <com.google.android.material.button.MaterialButton
+
+            android:id="@+id/btnCloseDialogBox"
+            android:layout_weight="0.7"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="❌"
+            android:foreground="?attr/selectableItemBackground"
+            android:backgroundTint="@color/white"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:gravity="end"
+            android:radius="0dp"
+            app:cornerRadius="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp">
+        </com.google.android.material.button.MaterialButton>
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnOnePlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1 Player"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        android:padding="10dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:layout_margin="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnTwoPlayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2 Player"
+        android:gravity="center"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/grey"
+        android:textSize="20dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:layout_margin="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+</LinearLayout>

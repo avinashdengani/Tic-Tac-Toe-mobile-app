@@ -44,7 +44,7 @@
                 android:textColor="@color/white"
                 android:paddingTop="6dp"
                 android:paddingBottom="6dp"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:layout_marginBottom="20dp" />
 
             <com.google.android.material.textview.MaterialTextView
@@ -62,12 +62,30 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/txtName"
+                    android:id="@+id/txtName1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textColorHint="@color/black"
                     android:textColor="@color/black"
-                    android:hint="Name"/>
+                    android:hint="Player 1"/>
+
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtName2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColorHint="@color/black"
+                android:textColor="@color/black"
+                android:hint="Player 2(optional)"/>
 
             </com.google.android.material.textfield.TextInputLayout>
 
