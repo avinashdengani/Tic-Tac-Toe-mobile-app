@@ -204,18 +204,20 @@
 
         </LinearLayout>
     </LinearLayout>
+
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/btnStartGameInGrid"
+        android:id="@+id/btnResetGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/white"
         android:layout_margin="30dp"
         android:layout_marginTop="50dp"
-        android:text="Start Game"
+        android:text="Reset Game"
         android:textColor="@color/grey"
         android:foreground="?attr/selectableItemBackground"
         android:textSize="20dp"
         app:cornerRadius="8dp"
+        android:visibility="invisible"
         android:padding="10dp"
-        android:onClick="onStartGameInGrid"/>
+        android:onClick="onResetGameInGrid"/>
 </LinearLayout>

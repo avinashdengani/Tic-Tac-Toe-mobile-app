@@ -7,13 +7,9 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
-    buildFeatures {
-        viewBinding true
-        dataBinding = true
-    }
     defaultConfig {
         applicationId "com.example.tictactoe"
-        minSdkVersion 21
+        minSdkVersion 23
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"

@@ -8,7 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="sky_blue">#8BEBE5</color>
-    <color name="grey">#333</color>
+    <color name="grey">#636E75</color>
+    <color name="lime">#C7EA46</color>
     <color name="white_variant">#a3a3a3</color>
+    <color name="coral">#FF7F50</color>
+    <color name="khaki">#F0E68C</color>
 
 </resources>
